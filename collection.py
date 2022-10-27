@@ -23,6 +23,8 @@ authors = {
     "Gerard Manley Hopkins": "1889"
 }
 
+#for key, value in authors.items():
+#    print("%s" % key + " died in " + "%s." % value)
 for author_date in authors:
     print("%s" % authors + " died in " + "%s." % date)
 
