@@ -1,7 +1,7 @@
 ###################################################
 #Josue Cifuentes
 #CIS 225
-#1) Number of errors found:
+#1) Number of errors found:???
 #2) Error Types: Syntax Error in first line misspelled authors
 #                Syntax Error in seventh line missing () after print
 #                Syntax Error in eighth line misplaced the second }
