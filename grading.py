@@ -45,27 +45,38 @@ exam_two = int(input("Input exam grade two: "))
 
 exam_three = int(input("Input exam grade three: "))
 
+#place a comma to separate each exam score
+#grade = [exam_one, exam_two, exam_three]
 grade = [exam_one + exam_two + exam_three]
 sum = 0
+
+#grade is a loop variable and grades is a list holding exam scores.
+#for grade in grades:
+#    sum = sum + grade
 for grade in grade:
   sum = sum + grade
 
+#Use len function to get total number of elements in the list grades
+#avg = sum/len(grades)
 avg = sum / 3
 
 if avg >= 90:
     letter_grade = "A"
 elif avg >= 80 and avg < 90:
     letter_grade = "B"
-elif avg > 69 and avg < 80:
+elif avg > 69 and avg < 80:   #elif avg >= 70 and avg < 80:
     letter_grade = "C"
-elif avg <= 69 and avg >= 65:
+elif avg <= 69 and avg >= 65: #elif avg >= 60 and avg < 70:
     letter_grade = "D"
-elif avg < 65:
+elif avg < 65:                #else:
     letter_grade = "F"
-
 for grade in letter_grade:
     print("Exam: " + str(grade))
 
+#No indentation necessary because average and grade should be printed once.
+#Also you can use a format function.
+#print("Average: {}".format(avg))
+#print("Grade: {}".format(letter_grade))
     print("Average: " + str(avg))
 
     print("Grade: " + letter_grade)
